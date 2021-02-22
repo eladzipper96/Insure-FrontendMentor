@@ -1,0 +1,4 @@
+@function middle_col_size() {
+    $result: 100vw-($side_col_size*2);
+    @return $result;
+}
