@@ -1,0 +1,125 @@
+@import "_variables";
+
+.nav__mobile {
+    display: none;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: $side_col_size minmax(middle_col_size(), 1fr) $side_col_size;
+
+
+
+    &__top {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            height: $logo_size;
+            align-self: center;
+        }
+
+        .nav__desktop{
+            align-self: center;
+            
+            &-ul {
+                display: flex;
+                list-style-type: none;
+                font-family: $font_body;
+                color: $dark_graish_violet;
+
+                .nav__desktop-button{
+                    font-size: 1.75rem;
+                    align-self: center;
+                }
+
+                .nav__desktop-button:not(:last-child) {
+                    margin-right: 2rem;
+                }
+
+                .nav__desktop-button:last-child {
+                    border-style: solid;
+                    padding: 1rem 2.5rem;
+                    color: black;
+                    border-width: 2px;
+                }
+            }
+
+        }
+    }
+
+    &__main-container {
+        grid-row: 2/3;
+        grid-column: 1 / -1;
+        background-color: $very_dark_violet;
+
+        display: grid;
+        grid-template-columns: $side_col_size minmax(middle_col_size(), 1fr) $side_col_size;
+        height: 52rem;
+     }
+    
+    &__main {
+        grid-column: 2 /3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, 80px);
+        column-gap: 3rem;
+
+            .line{
+                grid-column: 1 / 2;
+                grid-row: 2 /3;
+                height: 1px;
+                width: 15rem;
+                color: white;
+            }
+
+            &-slogen {
+                grid-column: 1 / 2;
+                grid-row: 2 / 4;
+                margin-top: 4rem;
+                color: white;
+                font-family: $font_heading;
+                font-size: 5rem;
+            }
+
+            &-paragraph {
+                grid-column: 1 / 2;
+                grid-row: 4 / 5;
+                margin-top: 4rem;
+                font-size: 1.6rem;
+                font-family: $font_body;
+                line-height: 2.75rem;
+                color: white;
+            }
+
+            &-button {
+                grid-column: 1 / 2;
+                grid-row: 6 / 7;
+                width: fit-content;
+                height: min-content;
+                font-size: 1.3rem;
+                font-family: $font_body;
+                background-color: white;
+                border-color: white;
+                border-style: solid;
+                padding: 0.75rem 2rem;
+            }
+
+            &-pattern--left{
+                grid-column: 1 / 2;
+                grid-row: 6 / -1;
+                transform: translateX(-$side_col_size);
+            }
+
+            &-image{
+                grid-column: 2 / 3;
+                grid-row: 2 / -1;
+            }
+
+    }
+}

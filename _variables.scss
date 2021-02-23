@@ -1,4 +1,18 @@
-$logo_size: 10rem; //temp
+// ########## Sizes ################
+$logo_size: 2rem;
 $side_col_size: 12.5vw;
 $gap_rows_size: 20vh;
+
+
+// ######### Fonts ###################
+$font_heading: 'DM Serif Display', serif;
+$font_body: 'Karla', sans-serif;
+
+
+// ######### Colors ###################
+$dark_violet: hsl(256, 26%, 20%);
+$grayish_blue: hsl(216, 30%, 68%);
+$very_dark_violet: hsl(270, 9%, 17%);
+$dark_graish_violet: hsl(273, 4%, 51%);
+$very_light_gray: hsl(0, 0%, 98%);
 
