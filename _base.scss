@@ -13,12 +13,18 @@ html {
 
 a:link {
     text-decoration: none;
-    //color: white;
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
-    //color: white;
+    color: black;
+}
+
+.line {
+    height: 1px;
+    width: 15rem;
+    color: $dark_graish_violet;
 }
 
 body {
