@@ -16,7 +16,7 @@
     &-main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 8rem;
+        column-gap: 4rem;
 
         &--item {
             display: grid;
@@ -34,9 +34,10 @@
             }
 
             &--paragraph{
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 font-family: $font_body;
                 color: $dark_graish_violet;
+                line-height: 2.75rem;
             }
         }
     }

@@ -1,0 +1,48 @@
+.findout{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-column: min-content min-content;
+    background-color: $dark_violet;
+    margin-top: 15vh;
+
+    &_headline{
+        margin-left: 12.5rem;
+        grid-column: 1 / 2;
+        font-size: 4rem;
+        font-family: $font_heading;
+        font-weight: 100;
+        color: white;
+        align-self: center;
+    }
+
+    &_button{
+        margin-right: 12.5rem;
+        z-index: 2;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        color: white;
+        font-size: 1.5rem;
+        font-family: $font_body;
+        letter-spacing: 1px;
+        border-style: solid;
+        border-width: 2px;
+        background-color: transparent;
+        padding: 1rem 2rem;
+        justify-self: end;
+        align-self: center;
+    }
+
+    &_button:hover {
+        color: $dark_violet;
+        background-color: white;
+        transition: all 0.4s;
+    }
+
+    &_pattern {
+        z-index: 1;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+    }
+}

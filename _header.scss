@@ -31,7 +31,6 @@
                 display: flex;
                 list-style-type: none;
                 font-family: $font_body;
-                color: $dark_graish_violet;
 
                 .nav__desktop-button{
                     font-size: 1.5rem;
@@ -40,6 +39,25 @@
 
                 .nav__desktop-button:not(:last-child) {
                     margin-right: 2rem;
+                    color: $dark_graish_violet;
+
+                    a:link {
+                        color: $dark_graish_violet;
+                    }
+                    
+                    a:visited {
+                        color: $dark_graish_violet;
+                    }
+
+                    &:hover {
+                        a:link {
+                            color: black;
+                        }
+                        
+                        a:visited {
+                            color: black;
+                        }
+                    }
                 }
 
                 .nav__desktop-button:last-child {
@@ -47,6 +65,29 @@
                     padding: 1rem 2.5rem;
                     color: black;
                     border-width: 2px;
+
+                    a:link {
+                        color: black;
+                    }
+                    
+                    a:visited {
+                        color: black;
+                    }
+
+                    &:hover {
+                        transition: all 0.4s;
+                        background-color: black;
+                        border-color: black;
+                        color: white;
+
+                        a:link {
+                            color: white;
+                        }
+                        
+                        a:visited {
+                            color: white;
+                        }
+                    }
                 }
             }
 
@@ -102,10 +143,27 @@
                 height: min-content;
                 font-size: 1.3rem;
                 font-family: $font_body;
-                background-color: white;
+                background-color: transparent;
                 border-color: white;
+                border-width: 2px;
+
                 border-style: solid;
                 padding: 0.75rem 2rem;
+
+                & a {
+                    color: white;
+                }
+
+                & a:hover {
+                    color: $dark_violet;
+                }
+
+                &:hover {
+                    color: $dark_violet;
+                    background-color: white;
+                    transition: all 0.4s;
+
+                }
             }
 
             &-pattern--left{
