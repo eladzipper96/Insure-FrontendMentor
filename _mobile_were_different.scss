@@ -1,0 +1,53 @@
+@media screen and (max-width: 500px) {
+
+.were_different{ 
+    margin-top: 0rem;
+
+    & hr {
+        justify-self: center;
+        margin-top: 6.5rem;
+    }
+
+    &-headline{
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        justify-self: center;
+    }
+
+    &-main{
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        row-gap: 3rem;
+
+        &--item {
+            display: grid;
+            row-gap: 2rem;
+            grid-template-rows: min-content min-content min-content;
+
+            &--icon {
+                margin-bottom: 1rem;
+                justify-self: center;
+            }
+
+            &--headline{
+                font-size: 2.75rem;
+                font-weight: 100;
+                font-family: $font_heading;
+                justify-self: center;
+            }
+
+            &--paragraph{
+                font-size: 1.6rem;
+                font-family: $font_body;
+                color: $dark_graish_violet;
+                line-height: 2.75rem;
+                justify-self: center;
+                text-align: center;
+            }
+        }
+    }
+
+}
+}

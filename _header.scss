@@ -1,6 +1,6 @@
 @import "_variables";
 
-.nav__mobile {
+.mobile_nav {
     display: none;
 }
 
@@ -149,6 +149,7 @@
 
                 border-style: solid;
                 padding: 0.75rem 2rem;
+                margin-top: 5rem;
 
                 & a {
                     color: white;

@@ -32,3 +32,7 @@ body {
     grid-template-columns: $side_col_size minmax(middle_col_size(), 1fr) $side_col_size;
     grid-template-rows: repeat(4, min-content);
 }
+
+.toggle_display {
+    display: none !important;
+}
